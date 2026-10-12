@@ -1,0 +1,3 @@
+check:
+  script:
+    - echo "this is a simple test"
