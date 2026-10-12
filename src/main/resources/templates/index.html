@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="https://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+
+<form th:object="${promptDto}" method="post"  th:action="@{/}">
+    <input placeholder="Enter your request" th:field="*{question}"> <br>
+    <div>
+        <p th:text="*{response}"></p>
+    </div>
+    <div>
+        <button type="submit">Ok</button>
+    </div>
+</form>
+</body>
+</html>
